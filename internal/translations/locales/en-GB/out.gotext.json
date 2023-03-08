@@ -1,0 +1,42 @@
+{
+    "language": "en-GB",
+    "messages": [
+        {
+            "id": "Welcome!",
+            "message": "Welcome!",
+            "translation": "Welcome!",
+            "translatorComment": "Copied from source.",
+            "fuzzy": true
+        },
+        {
+            "id": "{Books} books available",
+            "message": "{Books} books available",
+            "translation": {
+                "select": {
+                    "feature": "plural",
+                    "arg": "Books",
+                    "cases": {
+                        "=1": {
+                            "msg": "One book available"
+                        },
+                        "other": {
+                            "msg": "{Books} books available"
+                        }
+                    }
+                }
+            },
+            "translatorComment": "Copied from source.",
+            "placeholders": [
+                {
+                    "id": "Books",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": "books"
+                }
+            ],
+            "fuzzy": true
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "language": "es-CO",
+    "messages": [
+        {
+            "id": "Welcome!",
+            "message": "Welcome!",
+            "translation": "Bienvenido!"
+        },
+        {
+            "id": "{Books} books available",
+            "message": "{Books} books available",
+            "translation": {
+                "select": {
+                    "feature": "plural",
+                    "arg": "Books",
+                    "cases": {
+                        "=1": {
+                            "msg": "Un libro disponible"
+                        },
+                        "other": {
+                            "msg": "{Books} libros disponibles"
+                        }
+                    }
+                }
+            },
+            "placeholders": [
+                {
+                    "id": "Books",
+                    "string": "%[1]d",
+                    "type": "int",
+                    "underlyingType": "int",
+                    "argNum": 1,
+                    "expr": "books"
+                }
+            ]
+        }
+    ]
+}
